@@ -1,2 +1,14 @@
+$navbar-default-bg:rgba(0, 29, 85, 0.78);
+$navbar-default-link-color:rgba(121, 255, 11, 0.6);
+$navbar-default-link-hover-color:#fff;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+#logo {
+  color:#fff;
+  float: left;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
