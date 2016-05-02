@@ -12,3 +12,24 @@ $navbar-default-link-hover-color:#fff;
   letter-spacing: -1px;
   font-weight: bold;
 }
+.container-bg-color {
+  background-color:rgba(0, 29, 85, 0.78);
+}
+.right {
+  text-align: right;
+}
+.jumbotron {
+  height: 350px;
+  background-image: url('jumbotron-bg.jpg');
+}
+.jumbotron h1 {
+  color:#fff;
+  text-align: right;
+  font-weight: bold;
+}
+.footer {
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 29, 85, 0.78);
+  color:rgb(15, 196, 217);
+}
