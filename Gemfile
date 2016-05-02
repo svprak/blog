@@ -39,3 +39,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg'
 gem 'rails_12factor'
 gem 'coffee-script-source', '1.8.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
