@@ -1,3 +1,9 @@
-<h3>Edit Article</h3>
-<%= render 'form' %>
-<%= link_to "Back", articles_path, class: "btn btn-primary" %>
+<div class="container">
+  <h1 align="center">Edit Article</h1>
+  <%= render 'form' %>
+  <div class="row">
+    <div class="center col-sm-4 col-sm-offset-4">
+      [ <%= link_to "Back to articles listing...", articles_path %> ]
+    </div>
+  </div>
+</div>
