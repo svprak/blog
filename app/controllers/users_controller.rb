@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:edit, :show, :update]
+  before_action :require_same_user, only: [:edit, :update]
   def index
     #@users = User.all
     @users =User.paginate(page:params[:page], per_page: 5)
@@ -29,7 +30,7 @@ class UsersController < ApplicationController
     end
   end
   def show
-    @user_articles = @user.articles.paginate(page:params[:page], per_page:3)
+    @user_articles = @user.articles.paginate(page:params[:page], per_page:5)
   end
 
 
@@ -40,5 +41,11 @@ class UsersController < ApplicationController
     end
     def user_params
       params.require(:user).permit(:username, :email, :password)
+    end
+    def require_same_user
+      if current_user != @user
+        flash[:danger] = "You can only edit you profile"
+        redirect_to articles_path
+      end
     end
 end
