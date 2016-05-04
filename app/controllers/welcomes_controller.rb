@@ -1,9 +1,7 @@
 class WelcomesController < ApplicationController
-  def home
+  def index
     if logged_in?
-      redirect_to articles_path
-    else
-      redirect_to root_path
+      redirect_to articles_path     
     end
   end
 
